@@ -14,6 +14,11 @@ namespace v0617
     {
         int vx = -10;
         int vy = -10;
+        private void Form1_Load(object sender,EventArgs e)
+        {
+            //MessageBox.Show("" + ClientSize.Width);
+           //MessageBox.Show("" + ClientSize.Height);
+        }
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +34,22 @@ namespace v0617
             label1.Left += vx;
             label1.Top += vy;
 
-            if
+            if(label1.Left < 0)
+            {
+                vx = Math.Abs(vx);
+            }
+            if (label1.Right > ClientSize.Width)
+            {
+                vx = -Math.Abs(vx);
+            }
+            if (label1.Top < 0)
+            {
+                vy = Math.Abs(vy);
+            }
+            if (label1.Bottom > ClientSize.Height)
+            {
+                vy = -Math.Abs(vy);
+            }
         }
     }
 }
