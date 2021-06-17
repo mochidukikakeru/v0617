@@ -64,10 +64,10 @@ namespace v0617
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(368, 191);
+            this.label3.Location = new System.Drawing.Point(329, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 20;
+            this.label3.TabIndex = 0;
             this.label3.Text = "label3";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
