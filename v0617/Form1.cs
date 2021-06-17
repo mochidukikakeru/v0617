@@ -14,6 +14,7 @@ namespace v0617
     {
         int vx = -10;
         int vy = -10;
+        int score = 100;
         private void Form1_Load(object sender,EventArgs e)
         {
             //MessageBox.Show("" + ClientSize.Width);
@@ -34,6 +35,8 @@ namespace v0617
         {
             label1.Left += vx;
             label1.Top += vy;
+            score--;
+            label2.Text = $"Score{score}";
 
             if(label1.Left < 0)
             {
@@ -51,6 +54,12 @@ namespace v0617
             {
                 vy = -Math.Abs(vy);
             }
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
