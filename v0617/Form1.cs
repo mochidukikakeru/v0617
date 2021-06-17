@@ -26,7 +26,8 @@ namespace v0617
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            vx = 0;
+            vy = 0;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
